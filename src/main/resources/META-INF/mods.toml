@@ -1,0 +1,35 @@
+modLoader="javafml" #mandatory
+loaderVersion="[36,)" #mandatory This is typically bumped every Minecraft version by Forge. See our download page for lists of versions.
+license="All rights reserved"
+
+[[mods]]
+modId="examplemod"
+version="${file.jarVersion}"
+displayName="Extras Delight"
+logoFile="examplemod.png"
+credits="Thanks for this example mod goes to Java"
+authors="Billy Bobbo"
+description='''
+My Name Jeff
+'''
+
+[[dependencies.examplemod]]
+    modId="forge"
+    mandatory=true
+    versionRange="[36,)"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.examplemod]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.16.5,1.17)"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.examplemod]]
+    modId="farmersdelight"
+    mandatory=true
+    versionRange="[0.4.6,)"
+    ordering="AFTER"
+    side="BOTH"
